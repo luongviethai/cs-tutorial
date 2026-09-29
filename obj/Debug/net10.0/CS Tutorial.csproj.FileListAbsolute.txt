@@ -1,0 +1,28 @@
+F:\Study\CSTutorial\CS Tutorial\bin\Debug\net10.0\appsettings.Development.json
+F:\Study\CSTutorial\CS Tutorial\bin\Debug\net10.0\appsettings.json
+F:\Study\CSTutorial\CS Tutorial\bin\Debug\net10.0\CS Tutorial.staticwebassets.endpoints.json
+F:\Study\CSTutorial\CS Tutorial\bin\Debug\net10.0\CS Tutorial.exe
+F:\Study\CSTutorial\CS Tutorial\bin\Debug\net10.0\CS Tutorial.deps.json
+F:\Study\CSTutorial\CS Tutorial\bin\Debug\net10.0\CS Tutorial.runtimeconfig.json
+F:\Study\CSTutorial\CS Tutorial\bin\Debug\net10.0\CS Tutorial.dll
+F:\Study\CSTutorial\CS Tutorial\bin\Debug\net10.0\CS Tutorial.pdb
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\rpswa.dswa.cache.json
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\CS Tutorial.GeneratedMSBuildEditorConfig.editorconfig
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\CS Tutorial.AssemblyInfoInputs.cache
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\CS Tutorial.AssemblyInfo.cs
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\CS Tutorial.csproj.CoreCompileInputs.cache
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\CS Tutorial.MvcApplicationPartsAssemblyInfo.cache
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\rjimswa.dswa.cache.json
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\scopedcss\bundle\CS Tutorial.styles.css
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\staticwebassets.build.json
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\staticwebassets.build.json.cache
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\staticwebassets.development.json
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\swae.build.ex.cache
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\CS Tutorial.dll
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\refint\CS Tutorial.dll
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\CS Tutorial.pdb
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\CS Tutorial.genruntimeconfig.cache
+F:\Study\CSTutorial\CS Tutorial\obj\Debug\net10.0\ref\CS Tutorial.dll
