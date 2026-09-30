@@ -1,4 +1,4 @@
-namespace CS_Tutorial.Todo;
+namespace CS_Tutorial.Models;
 
 public class Todo
 {
@@ -6,6 +6,8 @@ public class Todo
     public string Name { get; set; } = string.Empty;
 
     public int UserId { get; set; }
+
+    public bool? IsCompleted { get; set; }
 
 }
 

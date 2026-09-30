@@ -1,4 +1,4 @@
-namespace CS_Tutorial.User;
+namespace CS_Tutorial.Models;
 
 public class User
 {

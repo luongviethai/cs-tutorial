@@ -1,6 +1,6 @@
 # Hướng Dẫn ASP.NET Core — Xây Dựng Web API Từ Zero
 
-> Bộ tài liệu được tách từ [aspnet-core-huong-dan.md](../aspnet-core-huong-dan.md) thành từng bài nhỏ.
+> Bộ tài liệu được chia thành từng bài nhỏ.
 > Đánh dấu `[x]` vào ô khi học xong một bài để theo dõi tiến độ.
 
 ## Mục lục
