@@ -2,6 +2,7 @@ using CS_Tutorial.Data;
 using CS_Tutorial.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using CS_Tutorial.Dtos;
 
 namespace CS_Tutorial.Controllers;
 
@@ -21,30 +22,50 @@ public class TodosController : ControllerBase
 
     [HttpGet]
 
-    public async Task<ActionResult<List<Todo>>> GetAll()
+    public async Task<ActionResult<List<TodoResponse>>> GetAll()
     {
-        var todos = await _context.Todos.AsNoTracking().OrderBy(t => t.Id).ToListAsync();
+        var todos = await _context.Todos.AsNoTracking().OrderBy(t => t.Id).Select(t => new TodoResponse
+        {
+            Id = t.Id,
+            Name = t.Name,
+            IsCompleted = t.IsCompleted,
+        }).ToListAsync();
 
         return Ok(todos);
     }
 
     [HttpPost]
 
-    public async Task<ActionResult<Todo>> Create(Todo newTodo)
+    public async Task<ActionResult<TodoResponse>> Create(CreateTodoRequest request)
     {
+        var newTodo = new Todo
+        {
+            Name = request.Name,
+            IsCompleted = request.IsCompleted
+        };
 
         _context.Todos.Add(newTodo);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetById), new { id = newTodo.Id }, newTodo);
+        return CreatedAtAction(nameof(GetById), new { id = newTodo.Id }, new TodoResponse
+        {
+            Id = newTodo.Id,
+            Name = newTodo.Name,
+            IsCompleted = newTodo.IsCompleted
+        });
 
     }
 
     [HttpGet("{id:int}")]
 
-    public async Task<ActionResult<Todo>> GetById(int id)
+    public async Task<ActionResult<TodoResponse>> GetById(int id)
     {
-        var todo = await _context.Todos.AsNoTracking().FirstOrDefaultAsync(t => t.Id == id);
+        var todo = await _context.Todos.AsNoTracking().Select(t => new TodoResponse
+        {
+            Id = t.Id,
+            Name = t.Name,
+            IsCompleted = t.IsCompleted
+        }).FirstOrDefaultAsync(t => t.Id == id);
 
         if (todo is null)
             return NotFound($"Không tìm thấy Todo có Id = {id}.");
