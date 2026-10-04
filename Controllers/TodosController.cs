@@ -3,7 +3,7 @@ using CS_Tutorial.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CS_Tutorial.Dtos;
-
+using Microsoft.AspNetCore.Authorization;
 namespace CS_Tutorial.Controllers;
 
 [ApiController]
@@ -21,7 +21,7 @@ public class TodosController : ControllerBase
     }
 
     [HttpGet]
-
+    [Authorize]
     public async Task<ActionResult<List<TodoResponse>>> GetAll()
     {
         var todos = await _context.Todos.AsNoTracking().OrderBy(t => t.Id).Select(t => new TodoResponse
